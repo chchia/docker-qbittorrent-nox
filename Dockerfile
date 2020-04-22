@@ -33,6 +33,6 @@ ENV WEBUI_PORT="8080" CHUID=1026 CHGID=100
 
 EXPOSE 6881 6881/udp 8080
 
-VOLUME /config /downloads
+VOLUME /volume1/docker/qbittorrent/:/config /volume2/downloads/:/downloads /volume1/docker/qbittorrent/localtime:/etc/localtime:ro
 
 ENTRYPOINT ["/entrypoint.sh"]
