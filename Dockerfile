@@ -22,7 +22,7 @@ RUN cd qbittorrent && \
 FROM alpine:latest
 
 #COPY --from=builder /usr/local/lib/libtorrent-rasterbar.so.1.2.2 /usr/lib/libtorrent-rasterbar.so.10
-COPY --from=builder /usr/local/lib/libtorrent-rasterbar.so.2.0 /usr/lib/libtorrent-rasterbar.so.2.0
+COPY --from=builder /usr/local/lib/libtorrent-rasterbar.so.2.0 /usr/lib/libtorrent-rasterbar.so.20
 
 COPY --from=builder /usr/local/bin/qbittorrent-nox /usr/bin/qbittorrent-nox
 
