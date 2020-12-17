@@ -20,6 +20,6 @@ $ docker create --name=qbittorrent-nox \
   -v /path/to/appdata/config:/config \
   -v /path/to/downloads:/downloads \
   --restart unless-stopped \
-  caoli5288/qbittorrent-nox
+  chchia/qbittorrent-nox
 ```
 ```
