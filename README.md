@@ -1,5 +1,8 @@
 # qbittorrent-nox
+forked originally from caoli5288
+and modded to suite the latest qbittorrent 4.4 master branch and libtorrent RC_2_0 branch.
 
+```
 Very minimal qbittorrent-nox image build from latest git master branch, forked from caoli5288
 
 check your UID and GID in synology and keyin correctly.
@@ -18,4 +21,5 @@ $ docker create --name=qbittorrent-nox \
   -v /path/to/downloads:/downloads \
   --restart unless-stopped \
   caoli5288/qbittorrent-nox
+```
 ```
