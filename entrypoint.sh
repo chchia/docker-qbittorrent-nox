@@ -2,6 +2,8 @@
 
 cp /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 echo "Set Time-Zone to Kuala Lumpur"
+now=$(date)
+echo "Current date: $now"
 
 if ! id qbittorrent; then
     echo "[WARNING] User not found. Maybe first bootstrap?"
