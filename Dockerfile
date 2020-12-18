@@ -30,16 +30,10 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN apk add --no-cache qt5-qtbase shadow
 
-RUN apk add --update tzdata
-
-ENV TZ=Asia/Kuala_Lumpur
-
 ENV WEBUI_PORT="8080" CHUID=1026 CHGID=100
 
 EXPOSE 6881 6881/udp 8080
 
-VOLUME /volume1/docker/qbittorrent:/config 
-
-VOLUME /volume2/downloads:/downloads
+VOLUME /config /downloads
 
 ENTRYPOINT ["/entrypoint.sh"]
