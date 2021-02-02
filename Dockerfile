@@ -28,7 +28,11 @@ COPY --from=builder /usr/local/bin/qbittorrent-nox /usr/bin/qbittorrent-nox
 
 COPY entrypoint.sh /entrypoint.sh
 
+ENV TZ=Asia/Kuala_Lumpur
+
 RUN apk add --no-cache qt5-qtbase shadow tzdata
+
+ENV TZ=Asia/Kuala_Lumpur
 
 ENV WEBUI_PORT="8080" CHUID=1026 CHGID=100
 
